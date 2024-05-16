@@ -1,0 +1,12 @@
+.page.theme_dark {
+  --bg-color: #000028;
+  --main-title-text-color: #DB00FF;
+  --accent-color: #FF0070;
+  --decor-color: var(--accent-color);
+  --shadow-color: var(--accent-color);
+  --text-color: #F1B2CE;
+  --text-title-decor-color: var(--bg-color);
+  --hover-border-color: rgba(255, 0, 112, 0.40);
+  --display-rec-picture: block;
+  --bg-image: url('../images/cover-image-dark.png');
+}

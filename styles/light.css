@@ -1,0 +1,39 @@
+.page.theme_light {
+  --bg-color: #FFF1F7;
+  --main-title-text-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --decor-color: #353430;
+  --shadow-color: var(--accent-color);
+  --text-color: var(--decor-color);
+  --text-title-decor-color: var(--decor-color);
+  --hover-border-color: rgba(50, 49, 45, 0.40);
+  --display-rec-picture: none;
+  --bg-image: url('../images/cover-image-light.png');
+}
+
+@media (width >= 1024px) {
+  .page.theme_light {
+    --shadow-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF1F7;
+    --main-title-text-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --decor-color: #353430;
+    --shadow-color: var(--accent-color);
+    --text-color: var(--decor-color);
+    --text-title-decor-color: var(--decor-color);
+    --hover-border-color: rgba(50, 49, 45, 0.40);
+    --display-rec-picture: none;
+    --bg-image: url('../images/cover-image-light.png');
+  }
+}
+
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  :root {
+    --shadow-color: #FF0070;
+  }
+}
