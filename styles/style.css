@@ -283,3 +283,67 @@
     gap: calc(var(--big-gap) - 1px);
   }
 }
+
+@media (width >= 1024px) or (height < 668px) {
+  .header::before {
+    grid-area: decor-before;
+  }
+
+  .header__theme-menu {
+    grid-area: menu;
+    justify-self: center;
+  }
+
+  .header .main-title {
+    grid-area: title;
+  }
+
+  .header__description {
+    grid-area: description;
+    max-inline-size: 491px;
+  }
+
+  .header::after {
+    grid-area: decor-after;
+  }
+
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, fit-content);
+    grid-template-areas:
+    ". menu decor-before"
+    "title title title"
+    "description description description"
+    "decor-after decor-after decor-after"
+    ;
+  }
+
+  .header__theme-menu-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-what .section__list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .gallery .section__list {
+    grid-template-rows: 25.4vw 30.7vw 428px;
+    gap: calc(var(--big-gap) + 2px);
+  }
+}
+
+@media (height < 668px) {
+  .gallery .section__list,
+  .section-what .section__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery .section__list {
+    gap: var(--standard-gap);
+  }
+
+  .gallery__picture {
+    max-block-size: 80vh;
+  }
+}
