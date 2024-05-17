@@ -110,7 +110,7 @@
   font-weight: var(--font-weight-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  text-shadow: 4px 4px 0px var(--shadow-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header .main-title {
@@ -223,7 +223,7 @@
 .footer .main-title {
   justify-self: center;
   margin-inline-start: 4px;
-  text-shadow: 2px 2px 0px var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 @media(width >= 768px) {
