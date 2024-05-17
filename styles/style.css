@@ -52,7 +52,7 @@
   margin-inline-start: 10px;
   margin-block-end: 1px;
   border-radius: 50%;
-  box-shadow: 0px 0px 3px 2px var(--decor-color);
+  box-shadow: 0 0 3px 2px var(--decor-color);
   background-color: var(--decor-color);
   inline-size: 9px;
   block-size: 9px;
