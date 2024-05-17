@@ -187,7 +187,7 @@
 }
 
 .section__link:focus {
-  outline: 0px;
+  outline: 0;
 }
 
 .section__link:focus-visible {
